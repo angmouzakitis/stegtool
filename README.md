@@ -1,0 +1,4 @@
+stegtool
+========
+
+Steganography Tool (bmp)
