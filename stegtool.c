@@ -24,7 +24,7 @@ void CharToBits(char);
 int main(int argc, char **argv)
 {
 	unsigned char *ptr;
-	char *TextToCrypt,*action,ch[10000],encryption[10]; //argument to hide
+	char *TextToCrypt,*action,ch[10000],encryption[8]; //argument to hide
 	int i=0,j;
 	char *decryptptr;
 	decryptptr = (char*) malloc(sizeof(char) * 10000);
@@ -213,9 +213,9 @@ unsigned char* CopyToMemory(char argv[])
 {
 	FILE *text;
 	long long i=0;
-	static  char *filepointer;
-	char openfile[50],temp;
-	filepointer = ( char *) malloc(16000000); //16MB
+	static unsigned char *filepointer;
+	char openfile[260],temp;
+	filepointer = (unsigned char *) malloc(32000000); //32MB
 	if(filepointer==NULL)
 	{
 		printf("Cannot allocate memory for filepointer\n");
