@@ -3,4 +3,4 @@ stegtool
 
 Steganography Tool (bmp)
 
-licenced under BSD-licence double clause.
+licensed under BSD-license double clause.
